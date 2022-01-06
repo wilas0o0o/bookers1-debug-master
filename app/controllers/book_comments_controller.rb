@@ -11,16 +11,16 @@ class BookCommentsController < ApplicationController
       render 'books/show'
     end
   end
-  
+
   def destroy
     @book = Book.find(params[:book_id])
-    @book_comment = @book.book_comments.find(params[:id])
-    @book_comment.destroy
-    redirect_to request.referer, notice: "Ypu have destroyed comment successfully."
+    book_comment = @book.book_comments.find(params[:id])
+    book_comment.destroy
+    redirect_to request.referer, notice: "You have destroyed comment successfully."
   end
-  
+
   private
-  
+
   def book_comment_params
     params.require(:book_comment).permit(:comment)
   end
