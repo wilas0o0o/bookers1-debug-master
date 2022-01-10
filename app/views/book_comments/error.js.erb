@@ -1,2 +1,1 @@
-$(".error_explanation").html("");
-$("main > .container").prepend("<%= j(render 'layouts/errors', obj: @book_comment) %>");
+$("main > .container").eq(1).prepend("<%= j(render 'layouts/errors', obj: @book_comment) %>");
