@@ -37,3 +37,64 @@ div {
     margin-bottom: 10px;
   }
 }
+
+//-------- 検索フォーム ---------//
+.radio-box {
+  display: inline;
+  input[type=radio] {
+    display: none;
+  }
+  input[type=radio]:checked + label:before {
+    color: #28A7E1;
+  }
+}
+
+
+.search-button {
+  border: none;
+  background: none;
+  font-family: "FontAwesome";
+  color: #000;
+}
+
+.content-box {
+  height: 100%;
+  width: 400px;
+  display: block;
+  padding: 0 100px 0 50px;
+  border-radius: 20px;
+  border: 1px solid black;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.search-box form, {
+  display: block;
+  position: relative;
+  height: 40px;
+}
+
+.search-box .search-button {
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  font-size: 25px;
+  transform: translateY(-50%);
+}
+
+#model_user + label:before {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  font-size: 25px;
+  transform: translateY(-50%);
+}
+
+#model_book + label:before {
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  font-size: 25px;
+  transform: translateY(-50%);
+}
+
