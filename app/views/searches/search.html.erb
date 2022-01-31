@@ -1,11 +1,11 @@
-<% if @model == 'user' %>
+<% if @model == "\uf007" %>
   <h3>Users search for "<%= @content %>"</h3>
   <% if @records.exists? %>
     <%= render 'users/index', users: @records %>
   <% else %>
     <p>ユーザーはいません</p>
   <% end %>
-<% elsif @model == 'book' %>
+<% elsif @model == "\uf02d" %>
   <h3>Books search for "<%= @content %>"</h3>
   <% if @records.exists? %>
     <%= render 'books/index', books: @records %>

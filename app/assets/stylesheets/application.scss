@@ -39,23 +39,6 @@ div {
 }
 
 //-------- 検索フォーム ---------//
-.radio-box {
-  display: inline;
-  input[type=radio] {
-    display: none;
-  }
-  input[type=radio]:checked + label:before {
-    color: #28A7E1;
-  }
-}
-
-
-.search-button {
-  border: none;
-  background: none;
-  font-family: "FontAwesome";
-  color: #000;
-}
 
 .content-box {
   height: 100%;
@@ -74,27 +57,18 @@ div {
   height: 40px;
 }
 
-.search-box .search-button {
+.search-box .search-button-user {
+  font-family: "FontAwesome";
   position: absolute;
-  left: 7px;
+  right: 10px;
   top: 50%;
-  font-size: 25px;
   transform: translateY(-50%);
 }
 
-#model_user + label:before {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  font-size: 25px;
-  transform: translateY(-50%);
-}
-
-#model_book + label:before {
+.search-box .search-button-book {
+  font-family: "FontAwesome";
   position: absolute;
   right: 60px;
   top: 50%;
-  font-size: 25px;
   transform: translateY(-50%);
 }
-

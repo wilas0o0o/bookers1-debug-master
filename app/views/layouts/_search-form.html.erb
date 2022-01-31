@@ -3,15 +3,9 @@
     <div class="mx-auto mt-1 search-box">
       <% if user_signed_in? %>
         <%= form_with url: search_path, method: :get, local: true do |f| %>
-          <%= f.submit "\uF002", class: "search-button" %>
           <%= f.text_field :content, class: "content-box", placeholder: "Search" %>
-          <div class="radio-box">
-            <%= f.radio_button :model, "user", checked: true %>
-            <%= f.label :model,"", value: "user" , class: "fas fa-user"%>
-          </div>
-          <div class="radio-box">
-            <%= f.radio_button :model, "book" %>
-            <%= f.label :model,"", value: "book", class: "fas fa-book" %>
+          <%= f.submit "\uf007", name: "user", class: "btn btn-primary btn-sm search-button-user" %>
+          <%= f.submit "\uF02D", name: "book", class: "btn btn-success btn-sm search-button-book" %>
           </div>
         <% end %>
       <% end %>
