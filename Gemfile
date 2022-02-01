@@ -71,3 +71,9 @@ gem 'font-awesome-sass', '~> 5.13'
 gem 'bootstrap', '~> 4.5'
 
 gem 'jquery-rails'
+
+# デプロイ用
+gem 'dotenv-rails'
+group :production do
+  gem 'mysql2'
+end
